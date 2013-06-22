@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<ul>
+		<li>
+			<a href="http://garigori.sencha.or.kr/json/ui/01_listAll.jsp">01_listAll.jsp : Youtube 전체 List  조회 </a><br>
+			Request1 : http://garigori.sencha.or.kr/json/ui/01_listAll.jsp <br>
+			rootProperty : list
+		</li>
+		<li>
+			<a href="http://garigori.sencha.or.kr/json/ui/02_category.jsp">02_category.jsp : Catetory </a><br>
+			Request1 : http://garigori.sencha.or.kr/json/ui/02_category.jsp <br>
+			rootProperty : list
+		</li>
+		<li>
+			<a href="http://garigori.sencha.or.kr/json/ui/03_listAll.jsp">03_listAll.jsp : Catetory + VideoList </a><br>
+			Request1 : http://garigori.sencha.or.kr/json/ui/03_listAll.jsp?updated=20121023185923<br>
+			Parameter : updated - yyMMdd24hhmmss
+			rootProperty : categoryList, videoList
+			Return Flag : NOTHING or REPLACE
+		</li>
+		<li>
+			<a href="http://garigori.sencha.or.kr/json/ui/04_listAll.jsp?callback=test">04_listAll.jsp : JSONP 형태로 작동하는 JSP</a><br>
+			Request1 : http://garigori.sencha.or.kr/json/ui/04_listAll.jsp?callback=test <br>
+			rootProperty : list
+		</li>
+		<li>
+			<a href="http://garigori.sencha.or.kr/json/ui/05_listAll.jsp">05_listAll.jsp : Catetory + VideoList </a><br>
+			03_listAll.jsp 내용을 MySQL DB 기반으로 구현하였습니다. <br>
+			Request1 : http://garigori.sencha.or.kr/json/ui/05_listAll.jsp<br>
+			Parameter : updated - yyMMdd24hhmmss
+			rootProperty : categoryList, videoList
+			Return Flag : NOTHING or REPLACE
+		</li>
+	</ul>
+	
+</html>

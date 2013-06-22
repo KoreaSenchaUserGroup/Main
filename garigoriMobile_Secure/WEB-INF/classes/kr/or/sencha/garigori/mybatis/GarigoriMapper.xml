@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+	root 엘리먼트 이름은 mapper입니다. 
+	ibatis에서는 SqlMap이었습니다.
+	namespace는 지정을 해도 되고 안해도 됩니다. ibatis에서는 네임스페이스 사용여부를
+	설정에서 명시적으로 선언해줘야 했지만, myBatis에서는 따로 설정할 필요가 없이, namespace attribute
+	가 없으면 네임스페이스 안쓰는걸로, 있으면 쓰는걸로 자동으로 되는듯 싶습니다.
+-->
+<mapper namespace="Default">
+	<!--
+		select 태그를 사용하여 select 쿼리를 만듭니다.
+		parameterType: iBatis의 parameterClass의 역할로 전달 인자의 타입을 선언합니다
+		resultType : iBatis의 resultClass와 같은 역할로 처음 선언했던 Configuration.xml의 
+		typeAlias를 나타냅니다.
+	-->
+	<select id="selectDefault" resultType="java.util.HashMap">
+		select * from test where id = 'id1'
+	</select>
+	
+	<select id="videoList" resultType="java.util.HashMap">
+select 3 max_video_count
+     , id
+     , category
+     , published
+     , updated
+     , title
+     , content
+     , link
+     , author
+     , favorite_count
+     , view_count
+     , thumbnail
+     , thumbnail0
+  from video a
+	</select>
+	
+	<select id="categoryList" resultType="java.util.HashMap">
+select 1 as id
+     , count(b.id) as count
+     , '전체보기' as category
+  from video a
+     , category b
+ where a.category = b.id
+UNION ALL
+select b.id
+     , count(b.id) count
+     , b.category
+  from video a
+     , category b
+ where a.category = b.id
+ group by b.category
+	</select>
+ 
+</mapper>

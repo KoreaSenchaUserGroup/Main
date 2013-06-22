@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Garigori</title>
+    <link rel="stylesheet" href="resources/css/garigoriCustom.css">
+    <link rel="stylesheet" href="resources/css/cover.css"><!-- CoverFlow Lib. -->
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+            background-color: #1985D0
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            margin: 0 5px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8
+            }
+        }
+    </style>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" type="text/javascript" src="sdk/microloader/development.js"></script>
+    <script>
+				var tag = document.createElement('script');
+				tag.src = "http://www.youtube.com/iframe_api";
+				var firstScriptTag = document.getElementsByTagName('script')[0];
+				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+				var player, player2;
+				function onYouTubeIframeAPIReady() { 
+					console.log('onYouTubeIframeAPIReady');
+				}
+	      // 4. The API will call this function when the video player is ready.
+	      function onPlayerReady(event) {
+	        event.target.playVideo();
+	      }
+	
+	      // 5. The API calls this function when the player's state changes.
+	      //    The function indicates that when playing a video (state=1),
+	      //    the player should play for six seconds and then stop.
+	      var done = false;
+	      function onPlayerStateChange(event) {
+	
+	      }
+	      function stopVideo() {
+	        player.stopVideo();
+	        player2.stopVideo();
+	      }
+	      
+				/* CoverFlow  라이브러리를 위해 추가 */
+				Ext.Loader.setConfig({
+			    	enabled: true,
+			    	paths: {
+			        	'Ext.ux': 'ux'
+			    	}
+				});
+		</script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

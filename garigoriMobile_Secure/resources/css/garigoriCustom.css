@@ -1,0 +1,91 @@
+
+.x-rating-star-hover {
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA6lJREFUeNq0VdtLFFEc/mZmXfO2FnaxC8XGhmFZRjeCgiDqJXoIeqkoCIQICnos7Km/oKinQAgCX3qIHoIg6ClQhMguCJa6XrKsLTPNdtu5nL7fnDPuaqv71GG+OTNzzvl+999Y6vVq/DMswubN4VxBfAqAnLoMhVYE6jo2OBk4XPcVsP0Llhox+CXIraLnGZJMqwOwcSf85iOOr8F5rKH0wEK5YYebIqhotvWz4CsFeGhH9XJg514KsM5gGk3IFWuylACfZIFTgJLZ1kJ+k+AndiNvHcemJiDPb3aVA9e6hozS+8oKkMuytM9Dv9vaiiwxoUTjdlTWkhwaTdtl/RxmkMJsWX7GIMt7lkH0hAx65oUg9HcLcRKpZpIrfUIUsCsd+Pl2jPsXylvwiaw/ldbYjfxvb6SWB6n9LcRrJAZci8A9zTvEsnOM0VE8XJdaSoClHqzbB6VO0T1JxiwZpqJigkoK1tYDyS20RmnApG+MGElTse8I01XHuo/nxrkvTYVeYKXTiRNjvqUeb/yN76hCXQJIEKtW6tAIoa/mk4cqGUInipm8cH1ykinNoExNA/EcuZyLOD58L8YMmUBdLInGzZowDFygyZSBMKqi2pirl7kNFMQ0TtDihhVMjgG6nNaEqrrWEbj+KD72ac2zSqoW+GOyxjWx8Qyid1mTPbJXzsh7QO3GBmX9Ck4NPzEC7DRxCPlgAMPvqAl7g2treGUQCuMsteSRfHxE3i/idPpuIYukePL2KHGIB/rw7pU5WKT9YsibefIHyUeFpw3nB+/NT9PCgQniMNO1F0NjBZeUg9RH/4jPsxfQ9qHj3zrw5mmVoT9v4PM344Yy5OKaAbolh0e49P5+6Ur2rELGyMixkflR08P8NSzIJBk1zJzMVGqJZsfm5psm54eBa0F1AqEQz8TCMwi/mYr2jBL1DVL5zbi5NV5aQHjQEOTD1tyMBHPZVYX+VBED1lLTtWx6Ncs0sazJHsvR/4hs0FTaRW6RvTmakacA6f3yPc7DDexF75m+/TOyQ1pjFfbtZ5ugGbN/tPukBmzVwvvb0j+cyAKbFR1zalFdTeI6lj5/hz3dLP9fz7lvD7GBuI3uniz63wCNtKqqkhbSO/FY6yIuijIi/IMlUc8DPovmZQ/wOdPL78eII8RLYpK4SmyBG3Sgq9vHcD+QWi9uTC3yyzStR6OLeIrBoV7OZ4ldxLMFewTsmmgjtmE224mJL2k+d5Ru10rhfw4b/3n8FWAAwna8wfz7wJUAAAAASUVORK5CYII=');
+	background-position: center;
+	background-repeat:no-repeat;
+	width: 32px;
+	height:32px;
+}
+
+.x-rating-star {
+	background-image: url('data:image/png;base64,R0lGODlhGAAYAOZNAP////j4+Pv7+/f39/n5+fr6+vb29vLy8vT09PPz8/7+/vz8/N3d3c3Nze/v762trevr6/39/efn5+zs7O3t7bi4uNDQ0PHx8dXV1ejo6MnJyeXl5dzc3KioqN7e3sfHx9LS0r6+vrq6utnZ2fDw8MzMzOrq6sXFxbm5ueTk5OPj4+Li4tHR0bCwsMHBwbW1tdvb28vLy+7u7sPDw/X19crKytjY2Le3t6SkpKurq7S0tOHh4ebm5tbW1qenp56enunp6aysrK6urtra2sLCws/Pz8DAwL29vby8vN/f37Ozs9PT09fX1////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAE0ALAAAAAAYABgAAAf/gE2Cg4QcJQGEiYqJEwwkNYuRiTUAAAwXkpIUHpUBMZmRGgaVACMHoIkOnKQDDaiCNBA9AaSVGxkIixMsSyNJEjIFtaQJJjtDGBYeCk0vJsLDCtLDlQIOGkxNQhkDC6QKERELC+EKpAsEBx+uISgSBgEEAvP09QQBARcWORBNBkc3eMArUM8evgtFHqwYNMDIixQ0AhSYSHHigAEOGjxQkYiAiwpABhAYSXKkgQMgHqRYRKAChwH4YsYcAKHCBkknGAS4aKCngYsDKIjIJEJCAAMIkiqFZ+BEBEkiKCBIQDXBgaoIBljot0hBCBkHDjhQwSIGjAlhD2AAEenaARIbPTQqQdHBBQMKBzggiQSDyAoLLVqUuFDARoUOMxhgeBApw48OQT5MIBQAgw4fOEJEWtDgg4RICEDM4PqqdCAAOw==');
+	background-position: center;
+	background-repeat:no-repeat;
+	width: 32px;
+	height:32px;
+}
+
+.table_content{
+background-color:#b74343;
+border:0px solid #000000;
+text-align:left;
+border-width:1px 1px 1px 1px;
+font-size:22px;
+font-family:arial;
+font-weight:bold;
+color:#ffffff;
+}
+
+.homeMainBack {
+ background: url('resources/images/garigoriTitle.png')  no-repeat center;
+ color: red;
+}
+
+/* =========== CoverFlow CSS Start ===================== */
+.ux-cover .my-cover-item {
+	position: relative;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 10px #333;
+	top: -20px;
+}
+/**
+ * Different styles for landscape and portrait mode
+ */	
+.ux-cover-landscape .my-cover-item{
+	font-size: 8px;
+}
+
+.ux-cover-portrait .my-cover-item{
+	font-size: 12px;
+}
+
+/* This is just to make the demo looks good on desktop */
+.x-desktop .my-cover-item{
+	font-size: 15px;
+}
+
+.my-cover-item .image{
+	position:absolute;
+	top:0;
+	bottom:0;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.my-cover-item .image img{
+	height: 100%;
+}
+
+.my-cover-item .dev {
+	color: black;
+}
+
+.my-cover-item .company {
+	position: absolute;
+	opacity: 1;
+	color: #FFFFFF;
+	background: black;
+	bottom: 0px;
+	height: 20px;
+	width: 100%;
+	z-index: 10;
+}
+
+/*Do something cool with selected item*/
+.x-item-selected .my-cover-item{
+	background-color: #FFF;
+
+}
+/* =========== CoverFlow CSS End ===================== */

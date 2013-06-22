@@ -1,0 +1,54 @@
+YOUTUBE API
+	- Youtube API DEMO (유용함) : http://gdata.youtube.com/demo/index.html
+	- Video ID 를 이용한 1건 조회 : http://gdata.youtube.com/feeds/api/videos/T93mDKxc4Fg/related?alt=json
+	- Youtube iFrame API : https://developers.google.com/youtube/iframe_api_reference?hl=ko
+	
+
+참조  URL
+	- Youtube Keyword 검색(가리고리) : http://gdata.youtube.com/feeds/api/videos?q=%EA%B0%80%EB%A6%AC%EA%B3%A0%EB%A6%AC&alt=json
+	- Sencha 교육용  URL : http://api.yelp.com/business_review_search?ywsid=k1Wfd6Rrfj9a8BNRUaG61Q&term=hotels&location=Washington DC
+
+
+
+
+
+
+
+
+
+================== 이선 이하는  Backup  용도 입니다. (삭제 예정) ============
+가리고리 검색 : http://gdata.youtube.com/feeds/api/videos?q=%EA%B0%80%EB%A6%AC%EA%B3%A0%EB%A6%AC&alt=json
+Test URL : http://api.yelp.com/business_review_search?ywsid=k1Wfd6Rrfj9a8BNRUaG61Q&term=hotels&location=Washington DC
+
+
+
+ Play List  검색 : http://gdata.youtube.com/feeds/api/playlists/F3043D1EE41B6DED?start-index=1&max-results=50&alt=rss&amp;v=2&amp;orderby=published&amp;client=ytapi-youtube-profile
+
+http://gdata.youtube.com/demo/index.html
+
+Doc : https://developers.google.com/youtube/2.0/developers_guide_jsonc?hl=ko
+
+ player tools > iframe api : 3번, 
+ 
+ 
+ 
+
+기본 URL
+http://gdata.youtube.com/feeds/api/videos
+
+파라메터
+q : 검색하고자 하는 검색어입니다.
+alt : 리턴받고자 하는 결과타입입니다. 기본값은 xml이며 json이나 josnc형식도 사용가능합니다.
+v : 버전입니다. josnc타입으로 결과값을 받으시려면 2라고 지정해주셔야 합니다.
+max-results : 최대로 리턴받고자 하는 개수입니다.
+
+예제입니다.
+
+yesterday로 검색한 결과
+http://gdata.youtube.com/feeds/api/videos?q=yesterday
+ 
+yesterday로 최대 10건 검색한 결과
+http://gdata.youtube.com/feeds/api/videos?q=yesterday&max-results=10
+
+yesterday로 최대 3건을 검색하고, 결과값을 jsonc로 받으려는 경우
+http://gdata.youtube.com/feeds/api/videos?q=yesterday&max-results=3&alt=jsonc&v=2
